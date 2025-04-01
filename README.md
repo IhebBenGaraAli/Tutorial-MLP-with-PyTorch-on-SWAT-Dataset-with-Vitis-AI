@@ -4,8 +4,8 @@
 
 Ce tutoriel vous guide à travers les étapes nécessaires pour entraîner, quantifier et déployer un modèle **MLP (Multi-Layer Perceptron)** avec **PyTorch** sur le dataset **SWAT**, en utilisant **Vitis AI** pour l'optimisation et l'exécution sur un **DPU (Deep Learning Processing Unit)**. Vous apprendrez à :
 
-1. Installer et configurer Vitis AI.
-2. Entraîner un modèle MLP avec PyTorch.
+1. Entraîner un modèle MLP avec PyTorch. 
+2. Installer et configurer Vitis AI.
 3. Quantifier le modèle pour une exécution optimisée sur FPGA.
 4. Déployer et exécuter le modèle sur une carte cible.
 5. Mesurer la consommation énergétique pendant l'inférence.
