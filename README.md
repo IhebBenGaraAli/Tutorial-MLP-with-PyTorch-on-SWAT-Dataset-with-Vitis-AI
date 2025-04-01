@@ -117,7 +117,7 @@ ${WRK_DIR} # votre répertoire de travail Vitis AI 3.5
 │   ├── tflite
 │   └── tvm
 └── tutorials # créé par vous
-    ├── Tutorial-MLP-with-PyTorch-on-SWAT-Dataset-with-Vitis-AI # ce tutoriel
+    ├── Tutorial-MLP # ce tutoriel
 ```
 
 ---
