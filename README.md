@@ -59,7 +59,7 @@ xilinx/vitis-ai-pytorch-gpu   3.5.0.001-b56bcce50   3c5d174a1807   27 hours ago 
 
 ### Création du répertoire du tutoriel
 
-Créez un dossier **tutorials** sous **${WRK_DIR}**, puis copiez ce tutoriel dans ce dossier et renommez-le en **Tutorial-MLP-with-PyTorch-on-SWAT-Dataset-with-Vitis-AI**.
+Créez un dossier **tutorials** sous **${WRK_DIR}**, puis copiez ce tutoriel dans ce dossier et renommez-le en **Tutorial-MLP**.
 
 Avec la commande suivante, vous pouvez vérifier la structure des dossiers :
 
