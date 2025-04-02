@@ -182,7 +182,7 @@ Dans le répertoire **train_mlp**, exécutez le script **train_mlp_pytorch.ipynb
 
 - Le modèle atteint une **précision de 98%**.
 - Les poids sont sauvegardés en **format `.pt`.
-- copier le fichier `.pt` ** dans **`/workspace/tutorials/Tutorial-MLP/vitis_ai_mlp/build/float`**.
+- copier le fichier `.pt`  dans **`/workspace/tutorials/Tutorial-MLP/vitis_ai_mlp/build/float`**.
 
 ---
 
