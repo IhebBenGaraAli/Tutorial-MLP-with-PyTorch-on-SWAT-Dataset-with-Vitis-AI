@@ -237,6 +237,7 @@ Dans **`inference_dpu_mlp`**, utilisez le script **power_measurement2** pour mes
 ## 🏁 Conclusion
 
 Ce tutoriel vous a accompagné tout au long du processus d'entraînement, de quantification et d'exécution d'un modèle MLP avec **Vitis AI** sur le dataset **SWAT**. Vous avez aussi appris à mesurer la consommation énergétique pendant l'inférence.  
+
 Attention : il vous revient de gérer les erreurs de versions de librairies qui peuvent parfois apparaître.
 
 ---
