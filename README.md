@@ -160,12 +160,16 @@ Nous utilisons le dataset **SWaT_Dataset_Attack_v0.csv**, disponible ici :
 - **51 capteurs et actionneurs** surveillés.
 - **41 attaques simulées**.
 
-### Placement du dataset
+### Placement du dataset  
 
-Le dataset doit être placé dans :
+Dans le répertoire `train_mlp`, placez le dataset nécessaire à l'entraînement du modèle.  
+
+Dans `vitis_ai_mlp`, créez un dossier `build`, puis à l'intérieur de `build`, ajoutez deux sous-répertoires : `data` et `float`.  
+
+Le dataset doit également être placé dans le repertoire swat_dataset :  
 
 ```sh
-/build/data/swat_dataset
+/workspace/tutorials/Tutorial-MLP/vitis_ai_mlp/build/data/swat_dataset
 ```
 
 ---
@@ -177,7 +181,8 @@ Le dataset doit être placé dans :
 Dans le répertoire **train_mlp**, exécutez le script **train_mlp_pytorch.ipynb** pour entraîner un MLP avec PyTorch.
 
 - Le modèle atteint une **précision de 98%**.
-- Les poids sont sauvegardés en **format `.pt`** dans **`build/float`**.
+- Les poids sont sauvegardés en **format `.pt`.
+- copier le fichier `.pt` ** dans **`/workspace/tutorials/Tutorial-MLP/vitis_ai_mlp/build/float`**.
 
 ---
 
@@ -191,6 +196,7 @@ Exécutez le script de quantification :
 cd /workspace/vitis_ai_mlp
 ./scripts/quant.sh
 ```
+Une fois la quantification terminée, vous pouvez vérifier les résultats avec Netron. Vous devriez y voir "fix 256", ce qui fait référence à l'utilisation du format INT8. Cela signifie que Vitis AI a quantifié les poids, les réduisant de leur format flottant à une représentation sur 8 bits (INT8).
 
 ---
 
@@ -208,6 +214,7 @@ Exécutez la compilation :
 cd /workspace/vitis_ai_mlp
 ./comp.sh
 ```
+Si tout se passe bien, la compilation génère le fichier **_MLP_int.xmodel.xmodel** dans le répertoire **build/compiled_**.
 
 ---
 
@@ -223,14 +230,13 @@ Après la compilation, copiez le modèle **`.xmodel`** et le dataset dans **`inf
 
 ### Mesure de la consommation énergétique
 
-Dans **`inference_dpu_mlp`**, utilisez le script **measure_power** pour mesurer la consommation énergétique durant l'inférence.
+Dans **`inference_dpu_mlp`**, utilisez le script **power_measurement2** pour mesurer la consommation énergétique durant l'inférence.
 
 ---
 
 ## 🏁 Conclusion
 
-Ce tutoriel vous a guidé à travers tout le processus d'entraînement, quantification et exécution d'un modèle MLP avec **Vitis AI** sur le dataset **SWAT**. Vous avez également appris à mesurer la consommation énergétique pendant l'inférence.
-
-💡 **Pour toute question, ouvrez une issue sur GitHub !** 🚀
+Ce tutoriel vous a accompagné tout au long du processus d'entraînement, de quantification et d'exécution d'un modèle MLP avec **Vitis AI** sur le dataset **SWAT**. Vous avez aussi appris à mesurer la consommation énergétique pendant l'inférence.  
+Attention : il vous revient de gérer les erreurs de versions de librairies qui peuvent parfois apparaître.
 
 ---
