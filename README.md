@@ -139,7 +139,7 @@ Activez l'environnement Conda et accédez au répertoire du tutoriel :
 
 ```sh
 conda activate vitis-ai-pytorch
-cd /workspace/tutorials/Tutorial-MLP-with-PyTorch-on-SWAT-Dataset-with-Vitis-AI
+cd /workspace/tutorials/Tutorial-MLP
 ```
 
 💡 **Remarque** : Le dossier `/workspace` dans le conteneur est mappé au système de fichiers hôte.
