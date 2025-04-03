@@ -222,7 +222,7 @@ Si tout se passe bien, la compilation génère le fichier **_MLP_int.xmodel.xmod
 
 ### Déploiement du modèle
 
-Après la compilation, copiez le modèle **`.xmodel`** et le dataset dans **`inference_dpu_mlp`**, puis transférez-les sur la carte cible.
+Après la compilation, copiez le modèle **`.xmodel`** et le dataset dans **`inference_dpu_mlp`**, puis transférez-les sur la carte cible avec la commande scp.
 
 ---
 
